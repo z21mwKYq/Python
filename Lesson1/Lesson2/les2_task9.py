@@ -3,18 +3,18 @@
 
 S = 0
 t = 0
-k = 0
+# num = 0
 while True:
     number = int(input('Введите число, для окончания укажите 0: '))
+    num = number
     if number == 0:
         break
     else:
-        k = number
         while number > 0:
-            t += number%10
-            number //=10
+            t += number % 10
+            number //= 10
         if S < t:
             S = t
-            else
+            nmax = num
         t = 0
-print(f'Число с максимальной суммой цифр {S}')
+print(f'Число с максимальной суммой цифр {nmax}, сумма цифр - {S}')
