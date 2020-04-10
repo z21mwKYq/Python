@@ -7,4 +7,4 @@ for i in range(32, 128):
         k = 0
     else:
         k += 1
-    print(f'{i:3} - {chr(i)}', end=' | ')
+        print(f'{i:3} - {chr(i)}', end=' | ')
