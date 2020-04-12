@@ -1,6 +1,5 @@
 # 4. Определить, какое число в массиве встречается чаще всего.
 import random
-# a = [3,0,3]
 a = [random.randint(1, 5) for _ in range(10)]
 print(f'Сгенерированный массив {a}')
 Smax = 0
@@ -16,5 +15,5 @@ for i in a:
         imax = i
     Max = 0
 
-print (imax, Smax)
+print (f'Чаще всего встречается число {imax}, оно встречается {Smax} раз')
 

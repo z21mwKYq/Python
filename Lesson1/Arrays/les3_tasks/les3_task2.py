@@ -7,7 +7,7 @@ import random
 
 a = [random.randint(1,10) for _ in range(6)]
 b = []
-print(f'Случайный первый массив {a}')
+print(f'Сгенерированный случайными числами первый массив {a}')
 
 for ind, i in enumerate(a):
     if i % 2 == 0:
