@@ -2,8 +2,8 @@
 # Они могут быть как равны между собой (оба минимальны), так и различаться.
 
 import random
-
-a = [random.randint(1, 20) for _ in range(10)]
+size = int(input(f'Введите размер массива '))
+a = [random.randint(1, size*2) for _ in range(size)]
 print(f'Сгенерированный массив {a}')
 
 n = 2

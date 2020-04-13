@@ -4,8 +4,8 @@
 # т. к. именно в этих позициях первого массива стоят четные числа.
 
 import random
-
-a = [random.randint(1,10) for _ in range(6)]
+size = int(input(f'Введите размер массива '))
+a = [random.randint(1,size+(size//2)) for _ in range(size)]
 b = []
 print(f'Сгенерированный случайными числами первый массив {a}')
 

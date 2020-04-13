@@ -1,6 +1,7 @@
 # 4. Определить, какое число в массиве встречается чаще всего.
 import random
-a = [random.randint(1, 5) for _ in range(10)]
+size = int(input(f'Введите размер массива '))
+a = [random.randint(1, size//2) for _ in range(size)]
 print(f'Сгенерированный массив {a}')
 Smax = 0
 Max = 0

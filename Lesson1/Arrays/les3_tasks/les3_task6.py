@@ -2,8 +2,8 @@
 # Сами минимальный и максимальный элементы в сумму не включать.
 
 import random
-
-a = [random.randint(1, 20) for _ in range(20)]
+size = int(input(f'Введите размер массива '))
+a = [random.randint(1, size) for _ in range(size)]
 print(f'Сгенерированный массив {a}')
 Min = a[0]
 Max = a[0]

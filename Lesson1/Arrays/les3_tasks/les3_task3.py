@@ -1,8 +1,8 @@
 # В массиве случайных целых чисел поменять местами минимальный и максимальный элементы.
 
 import random
-
-a = [random.randint(-5, 10) for _ in range(6)]
+size = int(input(f'Введите размер массива '))
+a = [random.randint(-5, size+15) for _ in range(size)]
 
 print(f'Сгенерированный массив {a}')
 Maxind = 0
@@ -19,8 +19,9 @@ for ind, i in enumerate(a):
 print(f'Макс. элемент в массиве {smax} номер {Maxind}')
 print(f'Мин. элемент в массиве {smin} номер {Minind}')
 
-del a[Maxind]
-a.insert(Maxind, smin)
-del a[Minind]
-a.insert(Minind, smax)
+a[Maxind], a[Minind] = a[Minind], a[Maxind]
+# del a[Maxind]
+# a.insert(Maxind, smin)
+# del a[Minind]
+# a.insert(Minind, smax)
 print(f'Измененный массив {a}')
