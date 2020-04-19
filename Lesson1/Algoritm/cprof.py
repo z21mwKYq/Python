@@ -11,6 +11,7 @@ def get_sum(array):
 
 def main ():
     lst = [i for i in range (1000000)]
+    lst = [i for i in range (1000000)]
     a = get_len(lst)
     b = get_sum(lst)
 
